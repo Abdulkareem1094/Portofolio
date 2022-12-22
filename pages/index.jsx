@@ -61,7 +61,7 @@ export default function Home() {
             I develope web applications using React and other modern technologies. I am a computer science student and I am passionate for creating intuitive and user-friendly web experiences.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle className=' cursor-pointer '/>
+              <AiFillTwitterCircle href='' className=' cursor-pointer '/>
               <AiFillGithub className=' cursor-pointer '/>
               <AiFillLinkedin className=' cursor-pointer '/>
               <AiFillMail className=' cursor-pointer '/>

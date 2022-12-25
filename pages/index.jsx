@@ -50,10 +50,10 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Abdul Kareem 
-            </h2>
+          <div className="text-center p-10 py-10 ">
+            <h1 className="text-9xl  py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+              ABDULKAREEM TUKUR
+            </h1>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
             React Frontend Web Developer
             </h3>
@@ -105,23 +105,41 @@ export default function Home() {
               Projects
           </h3>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/4 flex-1'>
+            <div className='basis-1/3 flex-1'>
               <Image src={web1} className='hover:bg-teal-800 bg-opacity-5 rounded-lg object-cover' width={'100%'} height={'100%'}  />
+              <div className='bg-teal-800   '>
+                <button>Visit site</button>
+              </div>
             </div>
             <div className='basis-1/3 flex-1'>
               <Image src={web2} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
+              <div className='bg-teal-800   '>
+                <button>Visit site</button>
+              </div>
             </div>
             <div className='basis-1/3 flex-1'>
               <Image src={web3} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
+              <div className='bg-teal-800   '>
+                <button>Visit site</button>
+              </div>
             </div>
             <div className='basis-1/3 flex-1'>
               <Image src={web4} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
+              <div className='bg-teal-800   '>
+                <button>Visit site</button>
+              </div>
             </div>
             <div className='basis-1/3 flex-1'>
               <Image src={web5} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
+              <div className='bg-teal-800   '>
+                <button>Visit site</button>
+              </div>
             </div>
             <div className='basis-1/3 flex-1'>
               <Image src={web6} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
+              <div className='bg-teal-800   '>
+                <button>Visit site</button>
+              </div>
             </div>
           </div>
         </section>

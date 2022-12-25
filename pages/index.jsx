@@ -31,7 +31,7 @@ export default function Home() {
 
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between dark:text-white">
+          <nav className="py-10 mb-12 flex justify-between dark:text-white ">
             <h1 className="font-burtons text-xl">developedbyabdulkareem</h1>
             <ul className="flex items-center">
               <li>
@@ -42,7 +42,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-lg ml-8"
                   href="#"
                 >
                   Resume
@@ -50,8 +50,9 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10 py-10 ">
-            <h1 className="text-9xl  py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+
+          <div className="text-center p-10 py-10 bg-black bg-opacity-80 rounded-lg ">
+            <h1 className="text-9xl font-Rubik py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               ABDULKAREEM TUKUR
             </h1>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
@@ -86,7 +87,7 @@ export default function Home() {
             </p>
           </div>
           <div className="pt-20">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+            <div className="text-center shadow-lg p-10 rounded-lg my-10 dark:bg-white flex-1">
               <Image className='mx-auto' src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Code your dream project
@@ -104,43 +105,57 @@ export default function Home() {
           <h3 className="text-5xl py-5 pt-20 text-center text-teal-600 font-medium dark:text-teal-400 ">
               Projects
           </h3>
-          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/3 flex-1'>
+          <div className='flex relative flex-col text-white gap-10 py-10 lg:flex-row lg:flex-wrap '>
+            <div className='basis-1/3 flex-1 relative'>
+              <div className='hover:bg-teal-600 absolute rounded-lg w-full h-full opacity-90 transition-all duration-500 text-center py-10 px-10'>
+                <h3>Description</h3>
+                <p>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
+                <a href="#">Visit site</a>
+              </div>
               <Image src={web1} className='hover:bg-teal-800 bg-opacity-5 rounded-lg object-cover' width={'100%'} height={'100%'}  />
-              <div className='bg-teal-800   '>
-                <button>Visit site</button>
-              </div>
             </div>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web2} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
-              <div className='bg-teal-800   '>
-                <button>Visit site</button>
+            <div className='basis-1/3 flex-1 relative'>
+              <div className='hover:bg-teal-600 absolute rounded-lg w-full h-full opacity-90 transition-all duration-500 text-center py-10 px-10'>
+                <h3>Description</h3>
+                <p>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
+                <a href="#">Visit site</a>
               </div>
+              <Image src={web2} className='hover:bg-teal-800 bg-opacity-5 rounded-lg object-cover' width={'100%'} height={'100%'}  />
             </div>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web3} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
-              <div className='bg-teal-800   '>
-                <button>Visit site</button>
+            <div className='basis-1/3 flex-1 relative'>
+              <div className='hover:bg-teal-600 absolute rounded-lg w-full h-full opacity-90 transition-all duration-500 text-center py-10 px-10'>
+                <h3>Description</h3>
+                <p>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
+                <a href="#">Visit site</a>
               </div>
+              <Image src={web3} className='hover:bg-teal-800 bg-opacity-5 rounded-lg object-cover' width={'100%'} height={'100%'}  />
             </div>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web4} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
-              <div className='bg-teal-800   '>
-                <button>Visit site</button>
+            <div className='basis-1/3 flex-1 relative'>
+              <div className='hover:bg-teal-600 absolute rounded-lg w-full h-full opacity-90 transition-all duration-500 text-center py-10 px-10'>
+                <h3>Description</h3>
+                <p>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
+                <a href="#">Visit site</a>
               </div>
+              <Image src={web4} className='hover:bg-teal-800 bg-opacity-5 rounded-lg object-cover' width={'100%'} height={'100%'}  />
             </div>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web5} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
-              <div className='bg-teal-800   '>
-                <button>Visit site</button>
+            <div className='basis-1/3 flex-1 relative'>
+              <div className='hover:bg-teal-600 absolute rounded-lg w-full h-full opacity-90 transition-all duration-500 text-center py-10 px-10'>
+                <h3>Description</h3>
+                <p>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
+                <a href="#">Visit site</a>
               </div>
+              <Image src={web5} className='hover:bg-teal-800 bg-opacity-5 rounded-lg object-cover' width={'100%'} height={'100%'}  />
             </div>
-            <div className='basis-1/3 flex-1'>
-              <Image src={web6} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
-              <div className='bg-teal-800   '>
-                <button>Visit site</button>
+            <div className='basis-1/3 flex-1 relative'>
+              <div className='hover:bg-teal-600 absolute rounded-lg w-full h-full opacity-90 transition-all duration-500 text-center py-10 px-10'>
+                <h3>Description</h3>
+                <p>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
+                <a href="#">Visit site</a>
               </div>
+              <Image src={web6} className='hover:bg-teal-800 bg-opacity-5 rounded-lg object-cover' width={'100%'} height={'100%'}  />
             </div>
+           
+           
           </div>
         </section>
       </main>

@@ -20,6 +20,10 @@ a {
 }
 
 @font-face {
-  font-family: 'burtons';
-  src: url('../public/Burtons.otf');
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../public/Rubik.ttf");
 }

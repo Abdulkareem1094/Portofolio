@@ -18,10 +18,10 @@ import web6 from "../public/web6.png";
 
 export default function Home() {
 
-  const [darkMode, setDarkMode] = useState(true)
+  // const [darkMode, setDarkMode] = useState(true)
 
   return (
-    <div className={ darkMode ? 'dark' : ''} >
+    <div  >{/* className={ darkMode ? 'dark' : ''} */}
 
       <Head>
         <title>Abdulkareem Tukur</title>
@@ -29,20 +29,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+      <main className="bg-gray-900 px-10 text-white md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between dark:text-white ">
+          <nav className="py-10 mb-12 flex justify-between  ">
             <h1 className="font-burtons text-xl">developedbyabdulkareem</h1>
             <ul className="flex items-center">
-              <li>
+              {/* <li>
                 <BsFillMoonStarsFill
                   onClick={() => { setDarkMode(!darkMode) }}
                   className=" cursor-pointer text-2xl"
                 />
-              </li>
+              </li> */}
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-lg ml-8"
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 px-4 py-2 border-none rounded-lg ml-8"
                   href="#"
                 >
                   Resume
@@ -52,16 +52,16 @@ export default function Home() {
           </nav>
 
           <div className="text-center p-10 py-10 bg-black bg-opacity-80 rounded-lg ">
-            <h1 className="text-9xl font-Rubik py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            <h1 className="text-9xl font-Rubik py-2 font-medium text-teal-400 md:text-6xl">
               ABDULKAREEM TUKUR
             </h1>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+            <h3 className="text-2xl py-2 md:text-3xl">
             React Frontend Web Developer
             </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+            <p className="text-md py-5 leading-8 text-gray-200 max-w-xl mx-auto md:text-xl">
             I develope web applications using React and other modern technologies. I am a computer science student and I am passionate for creating intuitive and user-friendly web experiences.
             </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-400">
               <AiFillTwitterCircle href='' className=' cursor-pointer '/>
               <AiFillGithub className=' cursor-pointer '/>
               <AiFillLinkedin className=' cursor-pointer '/>
@@ -72,22 +72,22 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Skills</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <h3 className="text-3xl py-1 ">Skills</h3>
+            <p className="text-md py-2 leading-8 text-gray-200">
               <span className="text-teal-500"> Strong understanding </span>
               of HTML, CSS, JavaScript and React
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="text-md py-2 leading-8 text-gray-200">
               <span className="text-teal-500"> Proficient </span>
               in using Git for version control, Figma, Redux, GraphQL, and Apollo
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            <p className="text-md py-2 leading-8 text-gray-200">
               <span className="text-teal-500"> Experience </span>
               with responsive web design and mobile-first development
             </p>
           </div>
           <div className="pt-20">
-            <div className="text-center shadow-lg p-10 rounded-lg my-10 dark:bg-white flex-1">
+            <div className="text-center shadow-lg p-10 rounded-lg my-10 bg-black bg-opacity-80 flex-1">
               <Image className='mx-auto' src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Code your dream project
@@ -102,10 +102,10 @@ export default function Home() {
         </section>
 
         <section>
-          <h3 className="text-5xl py-5 pt-20 text-center text-teal-600 font-medium dark:text-teal-400 ">
+          <h3 className="text-5xl py-5 pt-20 font-medium text-white ">
               Projects
           </h3>
-          <div className='flex relative flex-col text-white gap-10 py-10 lg:flex-row lg:flex-wrap '>
+          <div className='flex relative flex-col gap-10 py-10 lg:flex-row lg:flex-wrap '>
             <div className='basis-1/3 flex-1 relative'>
               <div className='hover:bg-teal-600 absolute rounded-lg w-full h-full opacity-90 transition-all duration-500 text-center py-10 px-10'>
                 <h3>Description</h3>
@@ -154,7 +154,6 @@ export default function Home() {
               </div>
               <Image src={web6} className='hover:bg-teal-800 bg-opacity-5 rounded-lg object-cover' width={'100%'} height={'100%'}  />
             </div>
-           
            
           </div>
         </section>

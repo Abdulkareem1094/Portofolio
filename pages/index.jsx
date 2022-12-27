@@ -51,7 +51,7 @@ export default function Home() {
           </nav>
 
           <div className="text-center p-10 py-10 bg-black bg-opacity-80 rounded-lg ">
-            <h1 className="text-9xl font-Rubik py-2 font-medium text-teal-400 md:text-6xl">
+            <h1 className="text-3xl font-Rubik py-2 font-medium text-teal-400 md:text-4xl lg:text-5xl">
               ABDULKAREEM TUKUR
             </h1>
             <h3 className="text-2xl py-2 md:text-3xl">
@@ -70,7 +70,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div>
+          <div className='pt-20'>
             <h3 className="text-3xl py-1 ">Skills</h3>
             <p className="text-md py-2 leading-8 text-gray-200">
               <span className="text-teal-500"> Strong understanding </span>

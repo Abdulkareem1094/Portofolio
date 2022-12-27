@@ -1,12 +1,11 @@
 import Head from 'next/head';
-import {BsFillMoonStarsFill} from 'react-icons/bs';
+// import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillMail,
   AiFillGithub,
 } from 'react-icons/ai'
-import { useState } from 'react';
 import Image from 'next/image';
 import code from "../public/code.png";
 import web1 from "../public/web1.png";
@@ -33,22 +32,22 @@ export default function Home() {
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between  ">
             <h1 className="font-burtons text-xl">developedbyabdulkareem</h1>
-            <ul className="flex items-center">
+            {/* <ul className="flex items-center"> */}
               {/* <li>
                 <BsFillMoonStarsFill
                   onClick={() => { setDarkMode(!darkMode) }}
                   className=" cursor-pointer text-2xl"
                 />
               </li> */}
-              <li>
+              {/* <li> */}
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 px-4 py-2 border-none rounded-lg ml-8"
                   href="#"
                 >
                   Resume
                 </a>
-              </li>
-            </ul>
+              {/* </li> */}
+            {/* </ul> */}
           </nav>
 
           <div className="text-center p-10 py-10 bg-black bg-opacity-80 rounded-lg ">

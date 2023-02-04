@@ -8,6 +8,10 @@ import {
 } from 'react-icons/ai'
 import Image from 'next/image';
 import code from "../public/code.png";
+import bgImg from "../public/bgImage.jpg";
+import bgImg1 from "../public/peakpx-1.jpg";
+import bgImg2 from "../public/peakpx.jpg";
+import Wallpaper from '../public/Wallpaper.jpeg';
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
@@ -29,8 +33,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-gray-900 text-white">
-          <nav className="sticky top-0 px-2 left-0 flex justify-between h-12 ">
+      <main className=" text-white">
+          <nav className="fixed top-0 w-full px-2 left-0 flex justify-between h-12 ">
             <h1 className="font-burtons mt-3 text-xl">?</h1>
                 <a
                   className="h-fit my-auto text-teal-500 bg-gray-800 px-4 py-2 border-none transition-all duration-300 ease-linear rounded-lg ml-8 hover:bg-teal-500 hover:text-white"
@@ -41,111 +45,128 @@ export default function Home() {
           </nav>
 
         <section>
-          <div className="text-center p-10 py-10 bg-black bg-opacity-80 rounded-lg ">
-            <h1 className="text-3xl font-Rubik py-2 font-medium text-teal-400 md:text-4xl lg:text-5xl">
-              ABDULKAREEM TUKUR
-            </h1>
-            <h3 className="text-2xl text-orange-500 py-2 md:text-3xl">
-            React Frontend Web Developer
-            </h3>
-            <p className="text-md py-5 leading-8 text-gray-200 max-w-xl mx-auto md:text-xl">
-            I develope web applications using React and other modern technologies. I am a computer science student and I am passionate for creating intuitive and user-friendly web experiences.
-            </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-400">
-              <AiFillTwitterCircle href='' className=' cursor-pointer '/>
-              <AiFillGithub className=' cursor-pointer '/>
-              <AiFillLinkedin className=' cursor-pointer '/>
-              <AiFillMail className=' cursor-pointer '/>
+          <div className='flex flex-col gap-20 h-screen overflow-y-scroll snap-y snap-mandatory bg-[#014c58]' >
+              {/* <Image src={bgImg} alt='' width={'100%'} height={'100%'} className='absolute object-cover -z-10 w-full h-full' /> */}
+
+            <div className='flex snap-start w-full min-h-screen max-h-screen' >
+              <div className='w-1/3 h-full bg-black ' ></div>
+              <div className="flex justify-center w-2/3 h-full text-center bg-[#00a1bc] ">
+                <div className='my-auto p-10' >
+                  <h1 className="text-3xl font-Rubik py-2 font-medium text-[#014c58] md:text-4xl lg:text-5xl">
+                    ABDULKAREEM TUKUR
+                  </h1>
+                  <h3 className="text-2xl text-orange-500 py-2 md:text-3xl">
+                  React Frontend Web Developer
+                  </h3>
+                  <p className="text-md py-5 leading-8 text-gray-200 max-w-xl mx-auto md:text-xl">
+                  I develope web applications using React and other modern technologies. I am a computer science student and I am passionate for creating intuitive and user-friendly web experiences.
+                  </p>
+                  <div className="text-5xl flex justify-center gap-16 py-3 text-gray-400">
+                    <AiFillTwitterCircle href='' className=' cursor-pointer '/>
+                    <AiFillGithub className=' cursor-pointer '/>
+                    <AiFillLinkedin className=' cursor-pointer '/>
+                    <AiFillMail className=' cursor-pointer '/>
+                  </div>
+                </div>
+              </div>
+              {/* <Image src={Wallpaper} alt='' width={'100%'} height={'100%'} className='w-full h-full' /> */}
+            </div>
+
+
+            <div className='flex flex-col snap-start w-full min-h-screen max-h-screen bg-[#00a1bc]'>
+              <div className='p-10'>
+                <h3 className="text-3xl py-1 ">Skills</h3>
+                <p className="text-md py-2 leading-8 text-gray-200">
+                  <span className="text-teal-500"> Strong understanding </span>
+                  of HTML, CSS, JavaScript and React
+                </p>
+                <p className="text-md py-2 leading-8 text-gray-200">
+                  <span className="text-teal-500"> Proficient </span>
+                  in using Git for version control, Figma, Redux, GraphQL, and Apollo
+                </p>
+                <p className="text-md py-2 leading-8 text-gray-200">
+                  <span className="text-teal-500"> Experience </span>
+                  with responsive web design and mobile-first development
+                </p>
+              </div>
+
+              <div className="text-center shadow-lg p-10 rounded-lg my-10 flex-1">         
+                <Image className='mx-auto' alt='' src={code} width={100} height={100} />
+                <h3 className="text-lg font-medium text-orange-500 pt-8 pb-2 ">
+                  Code your dream project
+                </h3>
+                <p className="py-2">
+                Are you ready to take your online presence to the next level and create a website that truly represents your brand or business?
+                If you have an idea for your next great website, I&apos;d love to help make it a reality. Together, we can turn your vision into a functional,
+                visually appealing, and user-friendly website that will attract and retain visitors. Let&apos;s start turning your dream website into a reality.
+                </p>
+              </div>
+            </div>
+          
+
+            <div className='flex flex-col snap-start p-10 w-full min-h-screen max-h-screen bg-[#00a1bc]'>
+              <div className='flex justify-between' >
+                <button>prive</button>
+                <button>Next</button>
+              </div>
             </div>
           </div>
-        </section>
 
-        <section>
-          <div className='pt-20'>
-            <h3 className="text-3xl py-1 ">Skills</h3>
-            <p className="text-md py-2 leading-8 text-gray-200">
-              <span className="text-teal-500"> Strong understanding </span>
-              of HTML, CSS, JavaScript and React
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-200">
-              <span className="text-teal-500"> Proficient </span>
-              in using Git for version control, Figma, Redux, GraphQL, and Apollo
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-200">
-              <span className="text-teal-500"> Experience </span>
-              with responsive web design and mobile-first development
-            </p>
-          </div>
-          <div className="pt-20">
-            <div className="text-center shadow-lg p-10 rounded-lg my-10 bg-black bg-opacity-80 flex-1">
-              <Image className='mx-auto' src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium text-orange-500 pt-8 pb-2 ">
-                Code your dream project
-              </h3>
-              <p className="py-2">
-              Are you ready to take your online presence to the next level and create a website that truly represents your brand or business?
-              If you have an idea for your next great website, I'd love to help make it a reality. Together, we can turn your vision into a functional,
-              visually appealing, and user-friendly website that will attract and retain visitors. Let's start turning your dream website into a reality.
-              </p>
-            </div>
-          </div>
-        </section>
 
-        <section>
-          <h3 className="text-5xl py-5 pt-20 font-medium ">
-              Projects
+          {/* <h3 className="text-5xl py-5 pt-20 font-medium ">
+              Project
           </h3>
           <div className='flex relative flex-col gap-10 py-10 lg:flex-row lg:flex-wrap '>
             <div className='basis-1/3 flex-1 relative group'>
-              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full opacity-90 transition-all duration-100 py-10 px-10 group-hover:scale-100'>
+              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
                 <h3 className='text-xl font-bold pb-2 '>Description</h3>
                 <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
                 <a href="#" className='text-lg'>Visit site</a>
               </div>
-              <Image src={web1} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
+              <Image src={web1} alt='' className='rounded-lg object-cover' width='100' height='100'  />
             </div>
             <div className='basis-1/3 flex-1 relative group'>
-              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full opacity-90 transition-all duration-100 py-10 px-10 group-hover:scale-100'>
+              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
                 <h3 className='text-xl font-bold pb-2 '>Description</h3>
                 <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
                 <a href="#" className='text-lg'>Visit site</a>
               </div>
-              <Image src={web2} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
+              <Image src={web2} alt='' className='rounded-lg object-cover' width='100' height='100'  />
             </div>
             <div className='basis-1/3 flex-1 relative group'>
-              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full opacity-90 transition-all duration-100 py-10 px-10 group-hover:scale-100'>
+              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
                 <h3 className='text-xl font-bold pb-2 '>Description</h3>
                 <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
                 <a href="#" className='text-lg'>Visit site</a>
               </div>
-              <Image src={web3} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
+              <Image src={web3} alt='' className='rounded-lg object-cover' width='100' height='100'  />
             </div>
             <div className='basis-1/3 flex-1 relative group'>
-              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full opacity-90 transition-all duration-100 py-10 px-10 group-hover:scale-100'>
+              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
                 <h3 className='text-xl font-bold pb-2 '>Description</h3>
                 <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
                 <a href="#" className='text-lg'>Visit site</a>
               </div>
-              <Image src={web4} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
+              <Image src={web4} alt='' className='rounded-lg object-cover' width='100' height='100'  />
             </div>
             <div className='basis-1/3 flex-1 relative group'>
-              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full opacity-90 transition-all duration-100 py-10 px-10 group-hover:scale-100'>
+              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
                 <h3 className='text-xl font-bold pb-2 '>Description</h3>
                 <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
                 <a href="#" className='text-lg'>Visit site</a>
               </div>
-              <Image src={web5} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
+              <Image src={web5} alt='' className='rounded-lg object-cover' width='100' height='100'  />
             </div>
             <div className='basis-1/3 flex-1 relative group'>
-              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full opacity-90 transition-all duration-100 py-10 px-10 group-hover:scale-100'>
+              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
                 <h3 className='text-xl font-bold pb-2 '>Description</h3>
                 <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
                 <a href="#" className='text-lg'>Visit site</a>
               </div>
-              <Image src={web6} className='rounded-lg object-cover' width={'100%'} height={'100%'}  />
-            </div>
+              <Image src={web6} alt='' className='rounded-lg object-cover' width='100' height='100'  />
+            </div> 
            
-          </div>
+          </div>*/}
         </section>
       </main>
                   {/* <ul className="flex items-center"> */}

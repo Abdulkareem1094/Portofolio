@@ -34,42 +34,42 @@ export default function Home() {
       </Head>
 
       <main className=" text-white">
-          <nav className="fixed top-0 w-full px-2 left-0 flex justify-between h-12 ">
-            <h1 className="font-burtons mt-3 text-xl">?</h1>
-                <a
-                  className="h-fit my-auto text-teal-500 bg-gray-800 px-4 py-2 border-none transition-all duration-300 ease-linear rounded-lg ml-8 hover:bg-teal-500 hover:text-white"
-                  href="#"
-                >
-                  Resume
-                </a>
+          <nav className="fixed top-0 w-full pr-5 left-0 flex justify-end h-12 z-10">
+            <a
+              className="h-fit my-auto text-teal-300 px-4 py-2 border-none transition-all duration-300 ease-linear rounded-lg ml-8 hover:bg-teal-500 hover:text-white"
+              href="#"
+            >
+              Resume
+            </a>
           </nav>
 
         <section>
-          <div className='flex flex-col gap-20 h-screen overflow-y-scroll snap-y snap-mandatory bg-[#014c58]' >
-              {/* <Image src={bgImg} alt='' width={'100%'} height={'100%'} className='absolute object-cover -z-10 w-full h-full' /> */}
+          <div className='flex flex-col gap-20 h-screen overflow-y-scroll snap-y snap-mandatory ' >
+              <Image src={bgImg1} alt='' width={'100%'} height={'100%'} className='absolute object-cover -z-10 w-full h-full' />
 
-            <div className='flex snap-start w-full min-h-screen max-h-screen' >
-              <div className='w-1/3 h-full bg-black ' ></div>
-              <div className="flex justify-center w-2/3 h-full text-center bg-[#00a1bc] ">
-                <div className='my-auto p-10' >
-                  <h1 className="text-3xl font-Rubik py-2 font-medium text-[#014c58] md:text-4xl lg:text-5xl">
-                    ABDULKAREEM TUKUR
-                  </h1>
-                  <h3 className="text-2xl text-orange-500 py-2 md:text-3xl">
+            <div className='relative flex snap-start min-h-screen max-h-screen rounded-lg border-[#00a1bc] border-2' >
+              <div className='w-1/3 rounded-l-lg h-full bg-black ' ></div>
+              <div className='absolute w-full mt-36 text-center  '>
+                <h1 className="text-3xl  font-Rubik font-medium text-[#ff5e00] md:text-4xl lg:text-6xl">
+                  ABDULKAREEM TUKUR
+                </h1>
+              </div>
+              <div className="relative flex w-2/3 h-full bg-opacity-10 bg-[#00a1bc] ">
+                <div className='my-auto px-10' >
+                  <h3 className="text-2xl text-black md:text-3xl">
                   React Frontend Web Developer
                   </h3>
-                  <p className="text-md py-5 leading-8 text-gray-200 max-w-xl mx-auto md:text-xl">
+                  <p className="text-md py-5 leading-8 text-[#00a1bc] max-w-xl md:text-xl">
                   I develope web applications using React and other modern technologies. I am a computer science student and I am passionate for creating intuitive and user-friendly web experiences.
                   </p>
-                  <div className="text-5xl flex justify-center gap-16 py-3 text-gray-400">
-                    <AiFillTwitterCircle href='' className=' cursor-pointer '/>
-                    <AiFillGithub className=' cursor-pointer '/>
-                    <AiFillLinkedin className=' cursor-pointer '/>
-                    <AiFillMail className=' cursor-pointer '/>
-                  </div>
+                </div>
+                <div className="absolute bottom-0 right-0 text-3xl flex flex-col gap-6 p-2 text-[#00a1bc]">
+                  <AiFillTwitterCircle href='' className=' cursor-pointer '/>
+                  <AiFillGithub className=' cursor-pointer '/>
+                  <AiFillLinkedin className=' cursor-pointer '/>
+                  <AiFillMail className=' cursor-pointer '/>
                 </div>
               </div>
-              {/* <Image src={Wallpaper} alt='' width={'100%'} height={'100%'} className='w-full h-full' /> */}
             </div>
 
 

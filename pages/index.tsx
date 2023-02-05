@@ -5,20 +5,20 @@ import {
   AiFillLinkedin,
   AiFillMail,
   AiFillGithub,
+  AiFillLeftSquare,
+  AiFillRightSquare,
+  AiFillRocket,
+  AiFillFile
 } from 'react-icons/ai'
 import Image from 'next/image';
 import code from "../public/code.png";
-import bgImg from "../public/bgImage.jpg";
-import bgImg1 from "../public/peakpx-1.jpg";
-import bgImg2 from "../public/peakpx.jpg";
-import Wallpaper from '../public/Wallpaper.jpeg';
+import bgImg from "../public/peakpx.jpg";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
-import Container from '../components/Container';
 
 export default function Home() {
 
@@ -34,47 +34,51 @@ export default function Home() {
       </Head>
 
       <main className=" text-white">
-          <nav className="fixed top-0 w-full pr-5 left-0 flex justify-end h-12 z-10">
-            <a
-              className="h-fit my-auto text-teal-300 px-4 py-2 border-none transition-all duration-300 ease-linear rounded-lg ml-8 hover:bg-teal-500 hover:text-white"
-              href="#"
-            >
-              Resume
-            </a>
+          <nav className=" fixed top-0 w-full pr-5 left-0 flex justify-end h-12 z-10">
+            <div className=' group m-2'>
+              <a
+                className=" my-auto text-[#00a1bc] mr-2 hover:rotate-[360deg]"
+                href="#"
+              >
+                <AiFillFile className=' cursor-pointer text-3xl transition-all duration-300 hover:rotate-[360deg] '/>
+              </a>
+              <div className='absolute text-xs top-10 right-6 invisible transition-all ease-in duration-300 delay-300 group-hover:visible bg-white text-black '>
+                <p>Download CV</p>
+              </div>
+            </div>
           </nav>
 
         <section>
           <div className='flex flex-col gap-20 h-screen overflow-y-scroll snap-y snap-mandatory ' >
-              <Image src={bgImg1} alt='' width={'100%'} height={'100%'} className='absolute object-cover -z-10 w-full h-full' />
-
+              <Image src={bgImg} alt='' width={'100%'} height={'100%'} className='absolute object-cover -z-10 w-full h-full' />
             <div className='relative flex snap-start min-h-screen max-h-screen rounded-lg border-[#00a1bc] border-2' >
               <div className='w-1/3 rounded-l-lg h-full bg-black ' ></div>
               <div className='absolute w-full mt-36 text-center  '>
-                <h1 className="text-3xl  font-Rubik font-medium text-[#ff5e00] md:text-4xl lg:text-6xl">
+                <h1 className="text-3xl font-Rubik font-medium text-[#ff5e00] md:text-4xl lg:text-6xl">
                   ABDULKAREEM TUKUR
                 </h1>
               </div>
-              <div className="relative flex w-2/3 h-full bg-opacity-10 bg-[#00a1bc] ">
+              <div className="relative flex w-2/3 h-full ">
                 <div className='my-auto px-10' >
                   <h3 className="text-2xl text-black md:text-3xl">
                   React Frontend Web Developer
                   </h3>
-                  <p className="text-md py-5 leading-8 text-[#00a1bc] max-w-xl md:text-xl">
+                  <p className="text-md py-5 leading-8 text-[#ffffff] max-w-xl md:text-xl">
                   I develope web applications using React and other modern technologies. I am a computer science student and I am passionate for creating intuitive and user-friendly web experiences.
                   </p>
                 </div>
                 <div className="absolute bottom-0 right-0 text-3xl flex flex-col gap-6 p-2 text-[#00a1bc]">
-                  <AiFillTwitterCircle href='' className=' cursor-pointer '/>
-                  <AiFillGithub className=' cursor-pointer '/>
-                  <AiFillLinkedin className=' cursor-pointer '/>
-                  <AiFillMail className=' cursor-pointer '/>
+                  <AiFillTwitterCircle href='' className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
+                  <AiFillGithub className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
+                  <AiFillLinkedin className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
+                  <AiFillMail className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
                 </div>
               </div>
             </div>
 
 
-            <div className='flex flex-col snap-start w-full min-h-screen max-h-screen bg-[#00a1bc]'>
-              <div className='p-10'>
+            <div className='flex flex-col p-2 snap-start justify-between w-full min-h-screen max-h-screen rounded-lg border-[#00a1bc] border-2'>
+              <div className=''>
                 <h3 className="text-3xl py-1 ">Skills</h3>
                 <p className="text-md py-2 leading-8 text-gray-200">
                   <span className="text-teal-500"> Strong understanding </span>
@@ -90,7 +94,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="text-center shadow-lg p-10 rounded-lg my-10 flex-1">         
+              <div className="text-center rounded-lg w-full bg-[#00a1bc]">         
                 <Image className='mx-auto' alt='' src={code} width={100} height={100} />
                 <h3 className="text-lg font-medium text-orange-500 pt-8 pb-2 ">
                   Code your dream project
@@ -104,12 +108,31 @@ export default function Home() {
             </div>
           
 
-            <div className='flex flex-col snap-start p-10 w-full min-h-screen max-h-screen bg-[#00a1bc]'>
-              <div className='flex justify-between' >
-                <button>prive</button>
-                <button>Next</button>
+            <div className='flex snap-start w-full min-h-screen max-h-screen rounded-lg border-[#00a1bc] border-'>
+              <div className='relative m-auto w-full h-full lg:w-3/4 lg:h-3/4 md:w-4/5 md:h-4/5  rounded-lg border-[#00a1bc] border-2' >
+                <Image className='object-cover rounded-lg h-full w-full ' src={web1} alt='' width={'100%'} height={'100%'} />
+                <a href="#" className='absolute text-4xl top-0 right-0' >
+                  <AiFillRocket className=' text-[#00a1bc] ' />
+                </a>
+                <div className='absolute top-1/2 text-[#00a1bc] w-full text-3xl flex justify-between' >
+                  <AiFillLeftSquare className=' cursor-pointer  '/>
+                  <AiFillRightSquare className=' cursor-pointer  '/>
+                </div>
               </div>
             </div>
+                  <AiFillRocket/>
+
+
+            <div className='flex flex-col snap-start p-2 w-full min-h-screen max-h-screen rounded-lg border-[#00a1bc] border-2'>
+            
+            </div>
+
+
+            <div className='flex flex-col snap-start p-2 w-full min-h-screen max-h-screen rounded-lg border-[#00a1bc] border-2'>
+             
+            </div>
+
+
           </div>
 
 

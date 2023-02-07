@@ -33,173 +33,174 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" text-white">
-          <nav className=" fixed top-0 w-full pr-5 left-0 flex justify-end h-12 z-10">
-            <div className=' group m-2'>
-              <a
-                className=" my-auto text-[#00a1bc] mr-2 hover:rotate-[360deg]"
-                href="#"
-              >
-                <AiFillFile className=' cursor-pointer text-3xl transition-all duration-300 hover:rotate-[360deg] '/>
-              </a>
-              <div className='absolute text-xs top-10 right-6 invisible transition-all ease-in duration-300 delay-300 group-hover:visible bg-white text-black '>
-                <p>Download CV</p>
-              </div>
+      <main>
+          <nav className=" fixed bottom-0 right-0 mr-5 text-3xl z-10">
+            <div className=" flex flex-col gap-6 p-2 text-blue">
+                <AiFillTwitterCircle href='' className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
+                <AiFillGithub className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
+                <AiFillLinkedin className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
+                <AiFillMail className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
             </div>
           </nav>
 
         <section>
-          <div className='flex flex-col gap-20 h-screen overflow-y-scroll snap-y snap-mandatory ' >
-              <Image src={bgImg} alt='' width={'100%'} height={'100%'} className='absolute object-cover -z-10 w-full h-full' />
-            <div className='relative flex snap-start min-h-screen max-h-screen rounded-lg border-[#00a1bc] border-2' >
-              <div className='w-1/3 rounded-l-lg h-full bg-black ' ></div>
-              <div className='absolute w-full mt-36 text-center  '>
-                <h1 className="text-3xl font-Rubik font-medium text-[#ff5e00] md:text-4xl lg:text-6xl">
-                  ABDULKAREEM TUKUR
-                </h1>
-              </div>
-              <div className="relative flex w-2/3 h-full ">
-                <div className='my-auto px-10' >
-                  <h3 className="text-2xl text-black md:text-3xl">
-                  React Frontend Web Developer
-                  </h3>
-                  <p className="text-md py-5 leading-8 text-[#ffffff] max-w-xl md:text-xl">
-                  I develope web applications using React and other modern technologies. I am a computer science student and I am passionate for creating intuitive and user-friendly web experiences.
-                  </p>
-                </div>
-                <div className="absolute bottom-0 right-0 text-3xl flex flex-col gap-6 p-2 text-[#00a1bc]">
-                  <AiFillTwitterCircle href='' className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
-                  <AiFillGithub className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
-                  <AiFillLinkedin className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
-                  <AiFillMail className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
+          <div className='flex flex-col h-screen overflow-y-scroll snap-y ' >
+
+            <div className='flex justify-center snap-start min-h-screen max-h-screen' >
+              <div className="w-fit h-fit text-6xl my-auto">
+                <h1>Hi, I&apos;m <span className='text-blue' >Abdulkareem</span></h1>
+                <h2>A frontend web developer.</h2>
+                <div className='flex text-sm text-blue space-x-1 mt-6 '>
+                  <button className=' px-2 border-[1px] border-blue hover:text-white hover:bg-blue transition-colors duration-1000 hover:duration-150'>About</button>
+                  <button className=' px-2 border-[1px] border-blue hover:text-white hover:bg-blue transition-colors duration-1000 hover:duration-150'>Projects</button>
+                  <button className=' px-2 border-[1px] border-blue hover:text-white hover:bg-blue transition-colors duration-1000 hover:duration-150'>Contact</button>
                 </div>
               </div>
+
             </div>
 
-
-            <div className='flex flex-col p-2 snap-start justify-between w-full min-h-screen max-h-screen rounded-lg border-[#00a1bc] border-2'>
-              <div className=''>
-                <h3 className="text-3xl py-1 ">Skills</h3>
-                <p className="text-md py-2 leading-8 text-gray-200">
-                  <span className="text-teal-500"> Strong understanding </span>
-                  of HTML, CSS, JavaScript and React
-                </p>
-                <p className="text-md py-2 leading-8 text-gray-200">
-                  <span className="text-teal-500"> Proficient </span>
-                  in using Git for version control, Figma, Redux, GraphQL, and Apollo
-                </p>
-                <p className="text-md py-2 leading-8 text-gray-200">
-                  <span className="text-teal-500"> Experience </span>
-                  with responsive web design and mobile-first development
-                </p>
+              <div className='flex flex-col snap-start p-6 w-full min-h-screen max-h-screen'>
+               
               </div>
-
-              <div className="text-center rounded-lg w-full bg-[#00a1bc]">         
-                <Image className='mx-auto' alt='' src={code} width={100} height={100} />
-                <h3 className="text-lg font-medium text-orange-500 pt-8 pb-2 ">
-                  Code your dream project
-                </h3>
-                <p className="py-2">
-                Are you ready to take your online presence to the next level and create a website that truly represents your brand or business?
-                If you have an idea for your next great website, I&apos;d love to help make it a reality. Together, we can turn your vision into a functional,
-                visually appealing, and user-friendly website that will attract and retain visitors. Let&apos;s start turning your dream website into a reality.
-                </p>
+              
+              <div className='flex flex-col snap-start p-6 w-full min-h-screen max-h-screen'>
+               
               </div>
-            </div>
-          
-
-            <div className='flex snap-start w-full min-h-screen max-h-screen rounded-lg border-[#00a1bc] border-'>
-              <div className='relative m-auto w-full h-full lg:w-3/4 lg:h-3/4 md:w-4/5 md:h-4/5  rounded-lg border-[#00a1bc] border-2' >
-                <Image className='object-cover rounded-lg h-full w-full ' src={web1} alt='' width={'100%'} height={'100%'} />
-                <a href="#" className='absolute text-4xl top-0 right-0' >
-                  <AiFillRocket className=' text-[#00a1bc] ' />
-                </a>
-                <div className='absolute top-1/2 text-[#00a1bc] w-full text-3xl flex justify-between' >
-                  <AiFillLeftSquare className=' cursor-pointer  '/>
-                  <AiFillRightSquare className=' cursor-pointer  '/>
-                </div>
-              </div>
-            </div>
-                  <AiFillRocket/>
-
-
-            <div className='flex flex-col snap-start p-2 w-full min-h-screen max-h-screen rounded-lg border-[#00a1bc] border-2'>
-            
-            </div>
-
-
-            <div className='flex flex-col snap-start p-2 w-full min-h-screen max-h-screen rounded-lg border-[#00a1bc] border-2'>
-             
-            </div>
-
 
           </div>
 
-
-          {/* <h3 className="text-5xl py-5 pt-20 font-medium ">
-              Project
-          </h3>
-          <div className='flex relative flex-col gap-10 py-10 lg:flex-row lg:flex-wrap '>
-            <div className='basis-1/3 flex-1 relative group'>
-              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
-                <h3 className='text-xl font-bold pb-2 '>Description</h3>
-                <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
-                <a href="#" className='text-lg'>Visit site</a>
-              </div>
-              <Image src={web1} alt='' className='rounded-lg object-cover' width='100' height='100'  />
-            </div>
-            <div className='basis-1/3 flex-1 relative group'>
-              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
-                <h3 className='text-xl font-bold pb-2 '>Description</h3>
-                <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
-                <a href="#" className='text-lg'>Visit site</a>
-              </div>
-              <Image src={web2} alt='' className='rounded-lg object-cover' width='100' height='100'  />
-            </div>
-            <div className='basis-1/3 flex-1 relative group'>
-              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
-                <h3 className='text-xl font-bold pb-2 '>Description</h3>
-                <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
-                <a href="#" className='text-lg'>Visit site</a>
-              </div>
-              <Image src={web3} alt='' className='rounded-lg object-cover' width='100' height='100'  />
-            </div>
-            <div className='basis-1/3 flex-1 relative group'>
-              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
-                <h3 className='text-xl font-bold pb-2 '>Description</h3>
-                <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
-                <a href="#" className='text-lg'>Visit site</a>
-              </div>
-              <Image src={web4} alt='' className='rounded-lg object-cover' width='100' height='100'  />
-            </div>
-            <div className='basis-1/3 flex-1 relative group'>
-              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
-                <h3 className='text-xl font-bold pb-2 '>Description</h3>
-                <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
-                <a href="#" className='text-lg'>Visit site</a>
-              </div>
-              <Image src={web5} alt='' className='rounded-lg object-cover' width='100' height='100'  />
-            </div>
-            <div className='basis-1/3 flex-1 relative group'>
-              <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
-                <h3 className='text-xl font-bold pb-2 '>Description</h3>
-                <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
-                <a href="#" className='text-lg'>Visit site</a>
-              </div>
-              <Image src={web6} alt='' className='rounded-lg object-cover' width='100' height='100'  />
-            </div> 
-           
-          </div>*/}
         </section>
       </main>
-                  {/* <ul className="flex items-center"> */}
-              {/* <li>
-                <BsFillMoonStarsFill
-                  onClick={() => { setDarkMode(!darkMode) }}
-                  className=" cursor-pointer text-2xl"
-                />
-              </li> */}
-              {/* <li> */}
     </div>
   )
-}
+  
+  
+  
+              {/* <div className='flex flex-col p-2 snap-start justify-between w-full min-h-screen max-h-screen rounded-lg border-bltext-blue border-2'>
+                <div className=''>
+                  <h3 className="text-3xl py-1 ">Skills</h3>
+                  <p className="text-md py-2 leading-8 text-gray-200">
+                    <span className="text-teal-500"> Strong understanding </span>
+                    of HTML, CSS, JavaScript and React
+                  </p>
+                  <p className="text-md py-2 leading-8 text-gray-200">
+                    <span className="text-teal-500"> Proficient </span>
+                    in using Git for version control, Figma, Redux, GraphQL, and Apollo
+                  </p>
+                  <p className="text-md py-2 leading-8 text-gray-200">
+                    <span className="text-teal-500"> Experience </span>
+                    with responsive web design and mobile-first development
+                  </p>
+                </div>
+  
+                <div className="text-center rounded-lg w-full bg-bltext-blue">         
+                  <Image className='mx-auto' alt='' src={code} width={100} height={100} />
+                  <h3 className="text-lg font-medium text-orange-500 pt-8 pb-2 ">
+                    Code your dream project
+                  </h3>
+                  <p className="py-2">
+                  Are you ready to take your online presence to the next level and create a website that truly represents your brand or business?
+                  If you have an idea for your next great website, I&apos;d love to help make it a reality. Together, we can turn your vision into a functional,
+                  visually appealing, and user-friendly website that will attract and retain visitors. Let&apos;s start turning your dream website into a reality.
+                  </p>
+                </div>
+              </div>
+            
+  
+              <div className='flex snap-start w-full min-h-screen max-h-screen rounded-lg border-bltext-blue border-'>
+                <div className='relative m-auto w-full h-full lg:w-3/4 lg:h-3/4 md:w-4/5 md:h-4/5  rounded-lg border-bltext-blue border-2' >
+                  <Image className='object-cover rounded-md h-full w-full ' src={web1} alt='' width={'100%'} height={'100%'} />
+                  <a href="#" className='absolute text-4xl top-0 right-0' >
+                    <AiFillRocket className=' text-blue  ' />
+                  </a>
+                  <div className='absolute bottom-1/2 text-blue w-full text-3xl flex justify-between' >
+                    <AiFillLeftSquare className=' cursor-pointer  '/>
+                    <AiFillRightSquare className=' cursor-pointer  '/>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div className='flex flex-col snap-start p-2 w-full min-h-screen max-h-screen rounded-lg border-bltext-blue border-2'>
+              
+              </div>
+  
+  
+              <div className='flex flex-col snap-start p-2 w-full min-h-screen max-h-screen rounded-lg border-bltext-blue border-2'>
+               
+              </div> */}
+  
+  
+            {/* <h3 className="text-5xl py-5 pt-20 font-medium ">
+                Project
+            </h3>
+            <div className='flex relative flex-col gap-10 py-10 lg:flex-row lg:flex-wrap '>
+              <div className='basis-1/3 flex-1 relative group'>
+                <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
+                  <h3 className='text-xl font-bold pb-2 '>Description</h3>
+                  <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
+                  <a href="#" className='text-lg'>Visit site</a>
+                </div>
+                <Image src={web1} alt='' className='rounded-lg object-cover' width='100' height='100'  />
+              </div>
+              <div className='basis-1/3 flex-1 relative group'>
+                <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
+                  <h3 className='text-xl font-bold pb-2 '>Description</h3>
+                  <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
+                  <a href="#" className='text-lg'>Visit site</a>
+                </div>
+                <Image src={web2} alt='' className='rounded-lg object-cover' width='100' height='100'  />
+              </div>
+              <div className='basis-1/3 flex-1 relative group'>
+                <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
+                  <h3 className='text-xl font-bold pb-2 '>Description</h3>
+                  <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
+                  <a href="#" className='text-lg'>Visit site</a>
+                </div>
+                <Image src={web3} alt='' className='rounded-lg object-cover' width='100' height='100'  />
+              </div>
+              <div className='basis-1/3 flex-1 relative group'>
+                <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
+                  <h3 className='text-xl font-bold pb-2 '>Description</h3>
+                  <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
+                  <a href="#" className='text-lg'>Visit site</a>
+                </div>
+                <Image src={web4} alt='' className='rounded-lg object-cover' width='100' height='100'  />
+              </div>
+              <div className='basis-1/3 flex-1 relative group'>
+                <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
+                  <h3 className='text-xl font-bold pb-2 '>Description</h3>
+                  <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
+                  <a href="#" className='text-lg'>Visit site</a>
+                </div>
+                <Image src={web5} alt='' className='rounded-lg object-cover' width='100' height='100'  />
+              </div>
+              <div className='basis-1/3 flex-1 relative group'>
+                <div className='scale-0 bg-teal-600 absolute rounded-lg w-full h-full transition-all duration-100 py-10 px-10 group-hover:scale-100'>
+                  <h3 className='text-xl font-bold pb-2 '>Description</h3>
+                  <p className='pb-5 '>This is a demonstration project that is currently being used for display purposes only. It is not my actual project at this time. </p>
+                  <a href="#" className='text-lg'>Visit site</a>
+                </div>
+                <Image src={web6} alt='' className='rounded-lg object-cover' width='100' height='100'  />
+              </div> 
+             
+            </div>*/}
+  {/* <ul className="flex items-center"> */}
+  {/* <li>
+  <BsFillMoonStarsFill
+  onClick={() => { setDarkMode(!darkMode) }}
+  className=" cursor-pointer text-2xl"
+  />
+  </li> */}
+  {/* <li> */}
+}  {/* <div className=' group m-2'>
+<a
+  className=" my-auto text-blue mr-2"
+  href="#"
+>
+  <AiFillFile className=' cursor-pointer text-3xl transition-all duration-300 hover:rotate-[360deg] '/>
+</a>
+<div className='absolute text-[10px] top-10 right-6 invisible transition-all ease-in duration-300 delay-200 group-hover:visible bg-white text-black '>
+  <p>Check out CV</p>
+</div>
+</div> */}

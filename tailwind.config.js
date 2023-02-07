@@ -11,6 +11,9 @@ module.exports = {
         Rubik:'Rubik',
         burtons: 'burtons'
       },
+      colors:{
+        blue:'#00a1bc'
+      },
     },
   },
   plugins: [],

@@ -1,7 +1,6 @@
 import Head from 'next/head';
 // import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {
-  AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillMail,
   AiFillGithub,
@@ -13,6 +12,7 @@ import {
 import Image from 'next/image';
 import code from "../public/code.png";
 import bgImg from "../public/peakpx.jpg";
+import bgImg1 from "../public/1.png";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
@@ -34,33 +34,58 @@ export default function Home() {
       </Head>
 
       <main>
-          <nav className=" fixed bottom-0 right-0 mr-5 text-3xl z-10">
+          <nav className=" fixed bottom-0 right-0 mr-5 text-xl z-10">
             <div className=" flex flex-col gap-6 p-2 text-blue">
-                <AiFillTwitterCircle href='' className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
-                <AiFillGithub className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
-                <AiFillLinkedin className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
-                <AiFillMail className=' cursor-pointer transition-all duration-300 hover:rotate-[360deg] '/>
+                <AiFillGithub className=' cursor-pointer transbltext-blue-all duration-300 hover:rotate-[360deg] '/>
+                <AiFillLinkedin className=' cursor-pointer transbltext-blue-all duration-300 hover:rotate-[360deg] '/>
+                <AiFillMail className=' cursor-pointer transbltext-blue-all duration-300 hover:rotate-[360deg] '/>
             </div>
           </nav>
 
         <section>
-          <div className='flex flex-col h-screen overflow-y-scroll snap-y ' >
+          <div className='flex flex-col text-black h-screen font-YanoneKaffeesatz overflow-y-scroll snap-proximity snap-y ' >
 
-            <div className='flex justify-center snap-start min-h-screen max-h-screen' >
-              <div className="w-fit h-fit text-6xl my-auto">
-                <h1>Hi, I&apos;m <span className='text-blue' >Abdulkareem</span></h1>
-                <h2>A frontend web developer.</h2>
+            <div className='flex justify-center snap-start bg-white min-h-screen max-h-screen' >
+              <div className="w-fit h-fit my-auto">
+                <h3 className='text-blue text-xl' >Hi, My name is </h3>
+                <h1 className=' text-6xl font-LilitaOne text-[#ff7b00]' >Abdulkareem Tukur</h1>
+                <h2 className=' text-4xl' >and I&apos;m a frontend web developer.</h2>
                 <div className='flex text-sm text-blue space-x-1 mt-6 '>
                   <button className=' px-2 border-[1px] border-blue hover:text-white hover:bg-blue transition-colors duration-1000 hover:duration-150'>About</button>
                   <button className=' px-2 border-[1px] border-blue hover:text-white hover:bg-blue transition-colors duration-1000 hover:duration-150'>Projects</button>
                   <button className=' px-2 border-[1px] border-blue hover:text-white hover:bg-blue transition-colors duration-1000 hover:duration-150'>Contact</button>
+              {/* <Image src={bgImg1} alt='' width={500} height={500} />   */}
                 </div>
               </div>
 
             </div>
 
-              <div className='flex flex-col snap-start p-6 w-full min-h-screen max-h-screen'>
-               
+              <div className='relative flex flex-col text-orange-100 snap-start  min-h-screen max-h-screen'>
+                <div className='bg-gradient-to-br from-blue to-[#00eeff] p-6 pt-12 mt-12 h-2/3'>
+                  <div className=' max-w-[460px]'>
+                    <p>As a front-end web developer, I create intuitive and user-friendly web experiences and implement modern design principles with mobile-first responsiveness.</p>
+                    <p>When I&apos;m not coding, I like to stay up to date with all the new technologies. I enjoy watching a good movie or playing video games I&apos;m also a huge Formula1 fan.</p>
+                    <div>
+                      <h2>Education</h2>
+                      <h3>Aliko Dangote Univercity of Science and Technology Wudil</h3>
+                      <p>Bachelors degree in Computer Science</p>
+                    </div>
+                  </div>
+                </div>
+                <div className='flex justify-center text-stone-500 my-auto gap-12 text-sm' >
+                  <button className='cursor-default '
+                  >React</button>
+                  <button className='cursor-default '
+                  >NextJS</button>
+                  <button className='cursor-default '                
+                  >TailwindCSS</button>
+                  <button className='cursor-default '                
+                  >Sass</button>
+                  <button className='cursor-default '                
+                  >JavaScript</button>
+                  <button className='cursor-default '                
+                  >GitHub</button>
+                </div>
               </div>
               
               <div className='flex flex-col snap-start p-6 w-full min-h-screen max-h-screen'>
@@ -114,9 +139,7 @@ export default function Home() {
                     <AiFillRocket className=' text-blue  ' />
                   </a>
                   <div className='absolute bottom-1/2 text-blue w-full text-3xl flex justify-between' >
-                    <AiFillLeftSquare className=' cursor-pointer  '/>
-                    <AiFillRightSquare className=' cursor-pointer  '/>
-                  </div>
+                    <AiFillLeftSquare className=' cursor-pointer  '/bltext-blue               <AiFillRightSquare className=' cursor-pointer  '/bltext-blue             </div>
                 </div>
               </div>
   
@@ -189,8 +212,7 @@ export default function Home() {
   {/* <li>
   <BsFillMoonStarsFill
   onClick={() => { setDarkMode(!darkMode) }}
-  className=" cursor-pointer text-2xl"
-  />
+  className=" cursor-pointer text-blue  />
   </li> */}
   {/* <li> */}
 }  {/* <div className=' group m-2'>
@@ -198,7 +220,7 @@ export default function Home() {
   className=" my-auto text-blue mr-2"
   href="#"
 >
-  <AiFillFile className=' cursor-pointer text-3xl transition-all duration-300 hover:rotate-[360deg] '/>
+  <AiFillFile className=' cursor-pointer text-blueransition-all duration-300 hover:rotate-[360deg] '/>
 </a>
 <div className='absolute text-[10px] top-10 right-6 invisible transition-all ease-in duration-300 delay-200 group-hover:visible bg-white text-black '>
   <p>Check out CV</p>

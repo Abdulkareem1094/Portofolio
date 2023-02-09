@@ -4,13 +4,13 @@ import {
   AiFillLinkedin,
   AiFillMail,
   AiFillGithub,
-  AiFillLeftSquare,
-  AiFillRightSquare,
-  AiFillRocket,
   AiFillFile
 } from 'react-icons/ai'
 import Image from 'next/image';
-import code from "../public/code.png";
+import my from "../public/mypic.png";
+import my1 from "../public/mypic1.png";
+import my2 from "../public/mypic2.png";
+import my3 from "../public/mypic3.png";
 import bgImg from "../public/peakpx.jpg";
 import bgImg1 from "../public/1.png";
 import web1 from "../public/web1.png";
@@ -54,15 +54,17 @@ export default function Home() {
                   <button className=' px-2 border-[1px] border-blue hover:text-white hover:bg-blue transition-colors duration-1000 hover:duration-150'>About</button>
                   <button className=' px-2 border-[1px] border-blue hover:text-white hover:bg-blue transition-colors duration-1000 hover:duration-150'>Projects</button>
                   <button className=' px-2 border-[1px] border-blue hover:text-white hover:bg-blue transition-colors duration-1000 hover:duration-150'>Contact</button>
-              {/* <Image src={bgImg1} alt='' width={500} height={500} />   */}
                 </div>
               </div>
 
             </div>
 
               <div className='relative flex flex-col text-orange-100 snap-start  min-h-screen max-h-screen'>
-                <div className='bg-gradient-to-br from-blue to-[#00eeff] p-6 pt-12 mt-12 h-2/3'>
-                  <div className=' max-w-[460px]'>
+                <div className='flex bg-gradient-to-br from-blue to-[#00eeff] mt-12 h-2/3'>
+                  <div className=' w-fit h-fit rounded-full bg-black ' >
+                    <Image src={my2} alt='' width={300} height={300} className='h-56 w-56 object-cover' />
+                  </div>
+                  <div className=' my-auto max-w-[460px]'>
                     <p>As a front-end web developer, I create intuitive and user-friendly web experiences and implement modern design principles with mobile-first responsiveness.</p>
                     <p>When I&apos;m not coding, I like to stay up to date with all the new technologies. I enjoy watching a good movie or playing video games I&apos;m also a huge Formula1 fan.</p>
                     <div>

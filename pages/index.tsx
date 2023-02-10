@@ -9,7 +9,7 @@ import {
 import Image from 'next/image';
 import my from "../public/mypic.png";
 import my1 from "../public/mypic1.png";
-import my2 from "../public/mypic2.png";
+import my2 from "../public/mypic2.jpg";
 import my3 from "../public/mypic3.png";
 import bgImg from "../public/peakpx.jpg";
 import bgImg1 from "../public/1.png";
@@ -34,7 +34,7 @@ export default function Home() {
       </Head>
 
       <main>
-          <nav className=" fixed bottom-0 right-0 mr-5 text-xl z-10">
+          <nav className=" fixed bottom-0 right-0 mr-5 text-xl z-10 max-sm:hidden ">
             <div className=" flex flex-col gap-6 p-2 text-blue">
                 <AiFillGithub className=' cursor-pointer transbltext-blue-all duration-300 hover:rotate-[360deg] '/>
                 <AiFillLinkedin className=' cursor-pointer transbltext-blue-all duration-300 hover:rotate-[360deg] '/>
@@ -43,38 +43,44 @@ export default function Home() {
           </nav>
 
         <section>
-          <div className='flex flex-col text-black h-screen font-YanoneKaffeesatz overflow-y-scroll snap-proximity snap-y ' >
+          <div className='flex flex-col text-black h-screen overflow-y-scroll snap-proximity snap-y ' >
 
-            <div className='flex justify-center snap-start bg-white min-h-screen max-h-screen' >
-              <div className="w-fit h-fit my-auto">
-                <h3 className='text-blue text-xl' >Hi, My name is </h3>
-                <h1 className=' text-6xl font-LilitaOne text-[#ff7b00]' >Abdulkareem Tukur</h1>
-                <h2 className=' text-4xl' >and I&apos;m a frontend web developer.</h2>
-                <div className='flex text-sm text-blue space-x-1 mt-6 '>
+            <div className='relative flex justify-center p-6 snap-start bg-white min-h-screen max-h-screen' >
+              <div className="w-fit h-fit mt-48 lg:my-auto">
+                <h3 className='text-blue text-xl font-YanoneKaffeesatz max-sm:text-sm' >Hi, My name is </h3>
+                <h1 className=' text-6xl font-LilitaOne text-[#ff7b00] max-sm:text-3xl' >Abdulkareem Tukur</h1>
+                <h2 className=' text-4xl max-sm:text-base' >and I&apos;m a frontend web developer.</h2>
+                <div className='flex text-sm text-blue space-x-1 mt-6 max-sm:text-xs '>
                   <button className=' px-2 border-[1px] border-blue hover:text-white hover:bg-blue transition-colors duration-1000 hover:duration-150'>About</button>
                   <button className=' px-2 border-[1px] border-blue hover:text-white hover:bg-blue transition-colors duration-1000 hover:duration-150'>Projects</button>
                   <button className=' px-2 border-[1px] border-blue hover:text-white hover:bg-blue transition-colors duration-1000 hover:duration-150'>Contact</button>
                 </div>
               </div>
-
+              <div className="absolute top-0 right-0 flex flex-col gap-6 p-2 text-blue">
+                <AiFillGithub className=' cursor-pointer transbltext-blue-all duration-300 hover:rotate-[360deg] '/>
+                <AiFillLinkedin className=' cursor-pointer transbltext-blue-all duration-300 hover:rotate-[360deg] '/>
+                <AiFillMail className=' cursor-pointer transbltext-blue-all duration-300 hover:rotate-[360deg] '/>
+              </div>
             </div>
 
-              <div className='relative flex flex-col text-orange-100 snap-start  min-h-screen max-h-screen'>
-                <div className='flex bg-gradient-to-br from-blue to-[#00eeff] mt-12 h-2/3'>
-                  <div className=' w-fit h-fit rounded-full bg-black ' >
-                    <Image src={my2} alt='' width={300} height={300} className='h-56 w-56 object-cover' />
+              <div className='relative flex flex-col text-orange-100 snap-start h-fit  lg:min-h-screen max-h-screen'>
+                <div className='flex bg-gradient-to-br from-blue to-[#00eeff] mt-12 h-2/3 '>
+                  <div className=' w-fit h-full  ' >
+                    <Image src={my2} alt='' width={300} height={300} className='h-full min-w-fit drop-shadow-2xl object-cover' />
                   </div>
-                  <div className=' my-auto max-w-[460px]'>
-                    <p>As a front-end web developer, I create intuitive and user-friendly web experiences and implement modern design principles with mobile-first responsiveness.</p>
-                    <p>When I&apos;m not coding, I like to stay up to date with all the new technologies. I enjoy watching a good movie or playing video games I&apos;m also a huge Formula1 fan.</p>
-                    <div>
-                      <h2>Education</h2>
-                      <h3>Aliko Dangote Univercity of Science and Technology Wudil</h3>
-                      <p>Bachelors degree in Computer Science</p>
+                  <div className=' my-auto p-6 max-w-[560px] text-xs lg:text-md md:text-sm z-10 '>
+                    <div className='w-fit h-fit p-2 md:p-6 rounded-br-3xl bg-orange-600 bg-opacity-90 '>
+                      <p>As a front-end web developer, I create intuitive and user-friendly web experiences and implement modern design principles with mobile-first responsiveness.</p>
+                      <p>When I&apos;m not coding, I like to stay up to date with all the new technologies. I enjoy watching a good movie or playing video games I&apos;m also a huge Formula1 fan.</p>
+                      <div>
+                        <h2 className='mt-2 text-black'>Education</h2>
+                        <h3>Aliko Dangote Univercity of Science and Technology Wudil</h3>
+                        <p>Bachelors degree in Computer Science</p>
+                    </div>
                     </div>
                   </div>
                 </div>
-                <div className='flex justify-center text-stone-500 my-auto gap-12 text-sm' >
+                <div className='flex justify-center text-blue my-auto gap-12 text-sm z-10 max-sm:text-xs ' >
                   <button className='cursor-default '
                   >React</button>
                   <button className='cursor-default '

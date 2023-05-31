@@ -2,7 +2,11 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { Sigmar } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ 
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-inter'
+})
 
 const sigmar = Sigmar({
   weight: '400',
@@ -18,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${sigmar.className} `}>{children}</body>
     </html>
   )
 }

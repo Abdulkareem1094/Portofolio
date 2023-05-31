@@ -11,9 +11,9 @@ import Logo from '../public/logo.jpg'
 
 export default function Home() {
   return (
-    <main className="font-inter bg-[#feffff]">
+    <main className="font-inter bg-[#e0e4e4]">
       <div className='bg-bg text-white'>
-        <div className='flex py-6 px-10 w-full justify-between'>
+        <div className='flex p-6 w-full justify-between'>
           <Image className='w-fit h-8 rounded-full border-black border-2' src={Logo} width={100} height={100}/>
           <button>CV</button>
         </div>
@@ -40,46 +40,44 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='text-center py-28 px-32 '>
+      <div className='text-center my-20 mx-32 '>
         <h1 className='text-4xl mb-10'>About</h1>
-          <p className='text-xl'>My passion for coding and creating visually stunning, dynamic, and engaging websites is off the charts! As a front-end dev, 
+          <p className='text-lg'>I love making sleek and professional looking websites using my favorite frameworks like React and Tailwind CSS. 
+            My passion for coding and creating visually stunning, dynamic, and engaging websites is off the charts! As a front-end dev, 
             I've got the skills to make websites look as good as they function. I'm always on top of the latest technologies and trends, 
             and I'm excited to bring my fun and outgoing personality to any project. Let's create something awesome together!
           </p>
       </div>
 
-      <div className='text-center py-28 px-32 '>
-        <h1 className='text-4xl'>Projects</h1>
-        <div className="mb-32 grid lg:mb-0 lg:grid-cols-4 lg:text-left">
-          <a
-              href=""
-              className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-          </a>
-          <a
-              href=""
-              className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-          </a>
-          <a
-              href=""
-              className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-          </a>
-          <a
-              href=""
-              className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-          </a>
-        </div>
+      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
+        <a
+            href=""
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_blank"
+            rel="noopener noreferrer"
+           >
+         </a>
+        <a
+            href=""
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_blank"
+            rel="noopener noreferrer"
+           >
+         </a>
+        <a
+            href=""
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_blank"
+            rel="noopener noreferrer"
+           >
+         </a>
+        <a
+            href=""
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_blank"
+            rel="noopener noreferrer"
+           >
+         </a>
       </div>
     </main>
   )

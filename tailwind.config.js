@@ -12,7 +12,6 @@ module.exports = {
       },
       fontFamily: {
         sigmar : ['var(--font-sigmar)'],
-        inter : ['var(--font-inter)'],
       },
     },
   },

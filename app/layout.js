@@ -1,7 +1,14 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { Sigmar } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const sigmar = Sigmar({
+  weight: '400',
+  subsets: ['latin'],
+  variable:'--font-sigmar',
+})
 
 export const metadata = {
   title: 'Create Next App',

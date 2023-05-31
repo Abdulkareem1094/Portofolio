@@ -33,27 +33,51 @@ export default function Home() {
               <Image className='h-6' src={Reactjs} />
               <Image className='h-6' src={Nextjs} />
             </div>
-            {/* <p>I love making sleek and professional looking websites using my favorite frameworks like React and Tailwind CSS. 
-              My passion for coding and creating visually stunning, dynamic, and engaging websites is off the charts! As a front-end dev, 
-              I've got the skills to make websites look as good as they function. I'm always on top of the latest technologies and trends, 
-              and I'm excited to bring my fun and outgoing personality to any project. Let's create something awesome together!
-            </p> */}
           </div>
           <div className='w-96'>
             <Image className='w-80 ' src={MyPic} />
           </div>
         </div>
+      </div>
 
+      <div>
+        <h1>About</h1>
+          <p>I love making sleek and professional looking websites using my favorite frameworks like React and Tailwind CSS. 
+            My passion for coding and creating visually stunning, dynamic, and engaging websites is off the charts! As a front-end dev, 
+            I've got the skills to make websites look as good as they function. I'm always on top of the latest technologies and trends, 
+            and I'm excited to bring my fun and outgoing personality to any project. Let's create something awesome together!
+          </p>
+      </div>
+      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
+        <a
+            href=""
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_blank"
+            rel="noopener noreferrer"
+           >
+         </a>
+        <a
+            href=""
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_blank"
+            rel="noopener noreferrer"
+           >
+         </a>
+        <a
+            href=""
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_blank"
+            rel="noopener noreferrer"
+           >
+         </a>
+        <a
+            href=""
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            target="_blank"
+            rel="noopener noreferrer"
+           >
+         </a>
       </div>
     </main>
   )
 }
-    // <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-    //   <a
-    //       href=""
-    //       className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //   </a>
-    // </div>

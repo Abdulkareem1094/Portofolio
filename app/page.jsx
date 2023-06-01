@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { AiFillDownCircle, AiFillDownSquare, AiFillGithub, AiFillLinkedin, AiFillMail, AiFillTwitterCircle } from "react-icons/ai";
+
 import HTML5 from '../public/html.png'
 import CSS3 from '../public/css3.png'
 import JS from '../public/download.png'
@@ -15,7 +17,10 @@ export default function Home() {
       <div className='bg-bg text-white'>
         <div className='flex p-6 w-full justify-between'>
           <Image className='w-fit h-8 rounded-full border-black border-2' src={Logo} width={100} height={100}/>
-          <button>CV</button>
+          <button className='flex gap-1'>
+            <h1 className='my-auto'>CV</h1>
+            <AiFillDownCircle className='my-auto text-lg'/>
+          </button>
         </div>
         <div className='relative flex justify-center'>
           <div className='absolute top-0 left-0 w-full h-full '/>
@@ -40,13 +45,27 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='text-center my-20 mx-32 '>
+      <div className='text-center my-20 mx-32 pb-10 '>
         <h1 className='text-4xl mb-10'>About</h1>
-          <p className='text-lg'>I love making sleek and professional looking websites using my favorite frameworks like React and Tailwind CSS. 
-            My passion for coding and creating visually stunning, dynamic, and engaging websites is off the charts! As a front-end dev, 
-            I've got the skills to make websites look as good as they function. I'm always on top of the latest technologies and trends, 
-            and I'm excited to bring my fun and outgoing personality to any project. Let's create something awesome together!
-          </p>
+        <p className='text-lg'>I love making sleek and professional looking websites using my favorite frameworks like React and Tailwind CSS. 
+          My passion for coding and creating visually stunning, dynamic, and engaging websites is off the charts! As a front-end dev, 
+          I've got the skills to make websites look as good as they function. I'm always on top of the latest technologies and trends, 
+          and I'm excited to bring my fun and outgoing personality to any project. Let's create something awesome together!
+        </p>
+        <div className='flex gap-3 my-10 text-3xl text-center'>
+          <a href="">
+            <AiFillGithub/>
+          </a>
+          <a href="">
+            <AiFillMail/>
+          </a>
+          <a href="">
+            <AiFillLinkedin/>
+          </a>
+          <a href="">
+            <AiFillTwitterCircle/>
+          </a>
+        </div>
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">

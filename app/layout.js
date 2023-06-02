@@ -1,17 +1,10 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-import { Sigmar } from 'next/font/google'
+import { Inter, Roboto_Mono } from 'next/font/google'
 
-const inter = Inter({ 
-  subsets: ['latin'],
+const roboro = Roboto_Mono({
   weight: ['400', '700'],
-  variable: '--font-inter'
-})
-
-const sigmar = Sigmar({
-  weight: '400',
   subsets: ['latin'],
-  variable:'--font-sigmar',
+  variable:'--font-roboto',
 })
 
 export const metadata = {
@@ -22,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${sigmar.className}  `}>{children}</body>
+      <body className={` ${roboro.className}  `}>{children}</body>
     </html>
   )
 }

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { AiFillDownCircle, AiFillDownSquare, AiFillGithub, AiFillLinkedin, AiFillMail, AiFillTwitterCircle } from "react-icons/ai";
+import { AiFillDownCircle, AiFillGithub, AiFillLinkedin, AiFillMail, AiFillTwitterCircle } from "react-icons/ai";
 
 import HTML5 from '../public/html.png'
 import CSS3 from '../public/css3.png'
@@ -10,13 +10,22 @@ import Reactjs from '../public/react-logo-text.jpg'
 import Nextjs from '../public/nextjs-logo.png'
 import MyPic from '../public/mypic2.jpg'
 import Logo from '../public/logo.jpg'
+import Web1 from '../public/web1.png'
+
+import { Sigmar } from 'next/font/google'
+
+const sigmar = Sigmar({
+  weight: '400',
+  subsets: ['latin'],
+  variable:'--font-sigmar',
+})
 
 export default function Home() {
   return (
-    <main className="font-inter bg-[#e0e4e4]">
+    <main className=" bg-[#ffffff]">
       <div className='bg-bg text-white'>
-        <div className='flex p-6 w-full justify-between'>
-          <Image className='w-fit h-8 rounded-full border-black border-2' src={Logo} width={100} height={100}/>
+        <div className={`flex p-6 w-full justify-between ${sigmar.className} `}>
+          <Image className='w-fit h-8 rounded-full border-white border-2' src={Logo} width={100} height={100}/>
           <button className='flex gap-1'>
             <h1 className='my-auto'>CV</h1>
             <AiFillDownCircle className='my-auto text-lg'/>
@@ -24,7 +33,7 @@ export default function Home() {
         </div>
         <div className='relative flex justify-center'>
           <div className='absolute top-0 left-0 w-full h-full '/>
-          <div className='w-96 pt-32 font-sigmar'>
+          <div className={`w-96 pt-32 ${sigmar.className}`}>
             <h1 className='text-xl'>Hello 👋, My name is</h1>
             <h1 className='text-5xl bg-orange-600 w-fit px-2 rounded-lg'>Abdulkareem</h1>
             <h1 className='text-2xl'>and I'm a</h1>
@@ -45,58 +54,92 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='text-center my-20 mx-32 pb-10 '>
-        <h1 className='text-4xl mb-10'>About</h1>
-        <p className='text-lg'>I love making sleek and professional looking websites using my favorite frameworks like React and Tailwind CSS. 
-          My passion for coding and creating visually stunning, dynamic, and engaging websites is off the charts! As a front-end dev, 
-          I've got the skills to make websites look as good as they function. I'm always on top of the latest technologies and trends, 
-          and I'm excited to bring my fun and outgoing personality to any project. Let's create something awesome together!
-        </p>
-        <div className='flex gap-3 my-10 text-3xl text-center'>
-          <a href="">
-            <AiFillGithub/>
-          </a>
-          <a href="">
-            <AiFillMail/>
-          </a>
-          <a href="">
-            <AiFillLinkedin/>
-          </a>
-          <a href="">
-            <AiFillTwitterCircle/>
-          </a>
+      <div className='text-center mx-32 '>
+        <div className='bg-bg text-white my-20 rounded-xl p-6'>
+          <h1 className='text-4xl mb-10'>About</h1>
+          <p className='text-lg'>I love making sleek and professional looking websites using my favorite frameworks like React and Tailwind CSS. 
+            My passion for coding and creating visually stunning, dynamic, and engaging websites is off the charts! As a front-end dev, 
+            I've got the skills to make websites look as good as they function. I'm always on top of the latest technologies and trends, 
+            and I'm excited to bring my fun and outgoing personality to any project. Let's create something awesome together!
+          </p>
+          <div className='flex gap-3 mt-10 text-3xl text-center'>
+            <a href="">
+              <AiFillGithub/>
+            </a>
+            <a href="">
+              <AiFillMail/>
+            </a>
+            <a href="">
+              <AiFillLinkedin/>
+            </a>
+            <a href="">
+              <AiFillTwitterCircle/>
+            </a>
+          </div>
         </div>
-      </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-            href=""
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-           >
-         </a>
-        <a
-            href=""
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-           >
-         </a>
-        <a
-            href=""
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-           >
-         </a>
-        <a
-            href=""
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-           >
-         </a>
+        <div className='bg-bg text-white my-20 rounded-xl p-6'>
+          <h1 className='text-4xl mb-10'>Projects</h1>
+          <div className=" grid gap-5 lg:mb-0 grid-cols-2 lg:text-left">
+            <a
+                href=""
+                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <Image className='' src={Web1} width='100%' height='100%' />
+              <div className=' py-2'>
+                <h1 className='text-lg'>Lorem ipsum</h1>
+                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
+                  tempore magni illo accusantium esse, ipsa sint dolore earum nesciunt impedit est. 
+                  Debitis repudiandae nulla, earum placeat quidem quasi.</p>
+              </div>
+            </a>
+            <a
+                href=""
+                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-white hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+              <Image className='' src={Web1} width='100%' height='100%' />
+              <div className=' py-2'>
+                <h1 className='text-lg'>Lorem ipsum</h1>
+                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
+                  tempore magni illo accusantium esse, ipsa sint dolore earum nesciunt impedit est. 
+                  Debitis repudiandae nulla, earum placeat quidem quasi.</p>
+              </div>
+            </a>
+            <a
+                href=""
+                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+              <Image className='' src={Web1} width='100%' height='100%' />
+              <div className=' py-2'>
+                <h1 className='text-lg'>Lorem ipsum</h1>
+                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
+                  tempore magni illo accusantium esse, ipsa sint dolore earum nesciunt impedit est. 
+                  Debitis repudiandae nulla, earum placeat quidem quasi.</p>
+              </div>
+            </a>
+            <a
+                href=""
+                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <Image className='' src={Web1} width='100%' height='100%' />
+              <div className=' py-2'>
+                <h1 className='text-lg'>Lorem ipsum</h1>
+                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
+                  tempore magni illo accusantium esse, ipsa sint dolore earum nesciunt impedit est. 
+                  Debitis repudiandae nulla, earum placeat quidem quasi.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
       </div>
     </main>
   )

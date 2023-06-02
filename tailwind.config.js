@@ -12,6 +12,7 @@ module.exports = {
       },
       fontFamily: {
         sigmar : ['var(--font-sigmar)'],
+        roboto : ['var(--font-roboro)'],
       },
     },
   },

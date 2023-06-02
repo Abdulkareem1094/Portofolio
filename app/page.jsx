@@ -78,18 +78,18 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=' text-bg my-20 rounded-xl p-6'>
-          <h1 className='text-4xl mb-10'>Projects</h1>
-          <div className=" flex flex-wrap  lg:text-left">
+        <div className=' text-white my-20 rounded-xl p-6'>
+          <h1 className='text-4xl mb-10 text-black'>Projects</h1>
+          <div className=" flex flex-wrap gap-y-5 gap-x-2 lg:text-left">
             <a
                 href=""
-                className="group w-96 h-96 mx-auto rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                className="group relative w-96 h-80 overflow-hidden box-border mx-auto rounded-lg "
                 target="_blank"
                 rel="noopener noreferrer"
               >
               <Image className='' src={Web1} width='100%' height='100%' />
-              <div className=' py-2'>
-                <h1 className='text-lg'>Lorem ipsum</h1>
+              <div className='absolute px-5 h-full top-[286px] bg-bg transition-all duration-300 group-hover:top-10 group-hover:py-4 '>
+                <h1 className='text-lg mb-2'>Lorem ipsum</h1>
                 <p className='text-sm '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
                   tempore magni illo accusantium esse, ipsa sint dolore earum nesciunt impedit est. 
                   Debitis repudiandae nulla, earum placeat quidem quasi.</p>
@@ -97,42 +97,42 @@ export default function Home() {
             </a>
             <a
                 href=""
-                className="group w-96 h-96 mx-auto rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-              <Image className='' src={Web1} width='100%' height='100%' />
-              <div className=' py-2'>
-                <h1 className='text-lg'>Lorem ipsum</h1>
-                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
-                  tempore magni illo accusantium esse, ipsa sint dolore earum nesciunt impedit est. 
-                  Debitis repudiandae nulla, earum placeat quidem quasi.</p>
-              </div>
-            </a>
-            <a
-                href=""
-                className="group w-96 h-96 mx-auto rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-              <Image className='' src={Web1} width='100%' height='100%' />
-              <div className=' py-2'>
-                <h1 className='text-lg'>Lorem ipsum</h1>
-                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
-                  tempore magni illo accusantium esse, ipsa sint dolore earum nesciunt impedit est. 
-                  Debitis repudiandae nulla, earum placeat quidem quasi.</p>
-              </div>
-            </a>
-            <a
-                href=""
-                className="group w-96 h-96 mx-auto rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                className="group relative w-96 h-80 overflow-hidden box-border mx-auto rounded-lg "
                 target="_blank"
                 rel="noopener noreferrer"
               >
               <Image className='' src={Web1} width='100%' height='100%' />
-              <div className=' py-2'>
-                <h1 className='text-lg'>Lorem ipsum</h1>
-                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
+              <div className='absolute px-5 h-full top-[286px] bg-bg transition-all duration-300 group-hover:top-10 group-hover:py-4 '>
+                <h1 className='text-lg mb-2'>Lorem ipsum</h1>
+                <p className='text-sm '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
+                  tempore magni illo accusantium esse, ipsa sint dolore earum nesciunt impedit est. 
+                  Debitis repudiandae nulla, earum placeat quidem quasi.</p>
+              </div>
+            </a>
+            <a
+                href=""
+                className="group relative w-96 h-80 overflow-hidden box-border mx-auto rounded-lg "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <Image className='' src={Web1} width='100%' height='100%' />
+              <div className='absolute px-5 h-full top-[286px] bg-bg transition-all duration-300 group-hover:top-10 group-hover:py-4 '>
+                <h1 className='text-lg mb-2'>Lorem ipsum</h1>
+                <p className='text-sm '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
+                  tempore magni illo accusantium esse, ipsa sint dolore earum nesciunt impedit est. 
+                  Debitis repudiandae nulla, earum placeat quidem quasi.</p>
+              </div>
+            </a>
+            <a
+                href=""
+                className="group relative w-96 h-80 overflow-hidden box-border mx-auto rounded-lg "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <Image className='' src={Web1} width='100%' height='100%' />
+              <div className='absolute px-5 h-full top-[286px] bg-bg transition-all duration-300 group-hover:top-10 group-hover:py-4 '>
+                <h1 className='text-lg mb-2'>Lorem ipsum</h1>
+                <p className='text-sm '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
                   tempore magni illo accusantium esse, ipsa sint dolore earum nesciunt impedit est. 
                   Debitis repudiandae nulla, earum placeat quidem quasi.</p>
               </div>

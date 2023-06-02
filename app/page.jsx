@@ -54,7 +54,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='text-center mx-32 '>
+      <div className='text-center '>
         <div className='bg-bg text-white my-20 rounded-xl p-6'>
           <h1 className='text-4xl mb-10'>About</h1>
           <p className='text-lg'>I love making sleek and professional looking websites using my favorite frameworks like React and Tailwind CSS. 
@@ -78,26 +78,26 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='bg-bg text-white my-20 rounded-xl p-6'>
+        <div className=' text-bg my-20 rounded-xl p-6'>
           <h1 className='text-4xl mb-10'>Projects</h1>
-          <div className=" grid gap-5 lg:mb-0 grid-cols-2 lg:text-left">
+          <div className=" flex flex-wrap  lg:text-left">
             <a
                 href=""
-                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                className="group w-96 h-96 mx-auto rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
                 target="_blank"
                 rel="noopener noreferrer"
               >
               <Image className='' src={Web1} width='100%' height='100%' />
               <div className=' py-2'>
                 <h1 className='text-lg'>Lorem ipsum</h1>
-                <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
+                <p className='text-sm '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
                   tempore magni illo accusantium esse, ipsa sint dolore earum nesciunt impedit est. 
                   Debitis repudiandae nulla, earum placeat quidem quasi.</p>
               </div>
             </a>
             <a
                 href=""
-                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-white hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                className="group w-96 h-96 mx-auto rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
@@ -111,7 +111,7 @@ export default function Home() {
             </a>
             <a
                 href=""
-                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                className="group w-96 h-96 mx-auto rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
@@ -125,7 +125,7 @@ export default function Home() {
             </a>
             <a
                 href=""
-                className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                className="group w-96 h-96 mx-auto rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
                 target="_blank"
                 rel="noopener noreferrer"
               >

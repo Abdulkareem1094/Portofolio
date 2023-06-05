@@ -141,7 +141,9 @@ export default function Home() {
             </a>
           </div>
         </div>
-
+      </div>
+      <div className='flex align-bottom bg-bg text-gray-400 p-6'>
+        <h1 className=''>MadeByAbdulkareem</h1>
       </div>
     </main>
   )

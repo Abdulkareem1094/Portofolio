@@ -152,8 +152,7 @@ export default function Home() {
   )
 }
 
-// Make sure to run npm install @formspree/react
-// For more help visit https://formspr.ee/react-help
+
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 function ContactForm() {
@@ -162,31 +161,52 @@ function ContactForm() {
       return <p>Email successfully sent!</p>;
   }
   return (
-      <form onSubmit={handleSubmit}>
-      <label htmlFor="email">
-        Email Address
-      </label>
-      <input
-        id="email"
-        type="email" 
-        name="email"
-      />
+    <form className=' text-sm flex gap-6 flex-col text-left w-96 my-40 mx-auto text-bg bg-bg border-2 p-6' onSubmit={handleSubmit}>
+      <h1 className='text-3xl text-white '>Get in touch</h1>
+      <div className='flex flex-col' >
+        <input
+          className='outline-none border-bg border-[1px] bg-gray-200 p-2 '
+          id="name"
+          type="text" 
+          name="name"
+          placeholder='Name'
+          required
+        />
+      </div>
+      <div className='flex flex-col' >  
+        <input
+          className='outline-none border-bg border-[1px] bg-gray-200 p-2 '
+          id="email"
+          type="email" 
+          name="email"
+          placeholder='Email'
+          required
+        />
+      </div>
       <ValidationError 
         prefix="Email" 
         field="email"
         errors={state.errors}
       />
-      <textarea
-        id="message"
-        name="message"
-      />
+      <div className='flex flex-col' >     
+        <textarea
+          className='outline-none border-bg border-[1px] bg-gray-200 p-2 h-40'
+          id="message"
+          name="message"
+          required
+          placeholder='Massage'
+        />
+      </div>
       <ValidationError 
         prefix="Message" 
         field="message"
         errors={state.errors}
       />
-      <button type="submit" disabled={state.submitting}>
-        Submit
+      <button
+        className='outline-none border-white border-[1px]  w-fit py-2 px-6 bg-white text-bg rounded-md font-bold' 
+        type="submit" 
+        disabled={state.submitting}>
+        Send
       </button>
     </form>
   );

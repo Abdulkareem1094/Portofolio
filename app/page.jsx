@@ -141,11 +141,54 @@ export default function Home() {
             </a>
           </div>
         </div>
+        <ContactForm />
       </div>
+      
       <div className='flex align-bottom bg-bg text-gray-400 p-6'>
         <h1 className=''>MadeByAbdulkareem</h1>
       </div>
     </main>
   )
 }
+
+// Make sure to run npm install @formspree/react
+// For more help visit https://formspr.ee/react-help
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+function ContactForm() {
+  const [state, handleSubmit] = useForm("myyaqpqk");
+  if (state.succeeded) {
+      return <p>Email successfully sent!</p>;
+  }
+  return (
+      <form onSubmit={handleSubmit}>
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        id="message"
+        name="message"
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
+  );
+}
+
 

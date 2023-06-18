@@ -58,8 +58,8 @@ export default function Home() {
       </div>
 
       <div className='text-center p-6'>
-        <div className='bg-bg text-white my-20 rounded-xl p-6 mx-auto max-w-[943px]'>
-          <h1 className='sm:text-4xl text-3xl sm:mb-10 mb-5'>About</h1>
+        <div className='bg-bg text-white mt-32 rounded-xl p-6 mx-auto max-w-[943px]'>
+          <h1 className='sm:text-4xl text-3xl font-bold sm:mb-10 mb-5'>About</h1>
           <p className='sm:text-lg text-sm'>I love making sleek and professional looking websites using my favorite frameworks like React and Tailwind CSS. 
             My passion for coding and creating visually stunning, dynamic, and engaging websites is off the charts! As a front-end dev, 
             I've got the skills to make websites look as good as they function. I'm always on top of the latest technologies and trends, 
@@ -81,8 +81,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=' text-white my-20 rounded-xl '>
-          <h1 className='text-4xl mb-10 text-black'>Projects</h1>
+        <div className=' text-white mt-32 rounded-xl '>
+          <h1 className='text-4xl mb-10 text-bg font-bold'>Projects</h1>
           <div className=" flex flex-wrap gap-y-5 gap-x-2 lg:text-left">
             <a
                 href=""
@@ -142,11 +142,11 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <ContactForm />
       </div>
       
-      <div className='flex align-bottom bg-bg text-gray-400 p-6'>
-        <h1 className=''>MadeByAbdulkareem</h1>
+      <div className='flex flex-col bg-bg text-gray-400 p-6 mt-32'>
+        <ContactForm />
+        <h1 className='text-center'>MadeByAbdulkareem</h1>
       </div>
     </main>
   )
@@ -161,8 +161,8 @@ function ContactForm() {
       return <p>Email successfully sent!</p>;
   }
   return (
-    <form className=' text-sm flex gap-6 flex-col text-left w-96 my-40 mx-auto text-bg bg-bg border-2 p-6' onSubmit={handleSubmit}>
-      <h1 className='text-3xl text-white '>Get in touch</h1>
+    <form className=' text-sm flex gap-6 flex-col text-left w-96 text-bg bg-bg p-6' onSubmit={handleSubmit}>
+      <h1 className='text-3xl text-white font-bold'>Get in touch</h1>
       <div className='flex flex-col' >
         <input
           className='outline-none border-bg border-[1px] bg-gray-200 p-2 '

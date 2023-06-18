@@ -9,7 +9,7 @@ import JS from '../public/download.png'
 import TS from '../public/typescript k.png'
 import Reactjs from '../public/react-logo-text.jpg'
 import Nextjs from '../public/nextjs-logo.png'
-import MyPic from '../public/mypic2.jpg'
+import MyPic from '../public/my pic shadow.png'
 import Logo from '../public/logo.jpg'
 import Web1 from '../public/web1.png'
 
@@ -34,13 +34,13 @@ export default function Home() {
         </div>
         <div className='relative flex justify-center px-6'>
           <div className='absolute top-0 left-0 w-full h-full z-10'/>
-          <div className='relative lg:w-[650px] md:w-[560px] sm:w-fit px-10 z-0'>
+          <div className='relative bg-[#ffffff] rounded-t-xl lg:w-[650px] md:w-[560px] sm:w-fit mt-20 px-10 max-sm:px-5 z-0'>
             <div className={`pt-32 pb-6 ${sigmar.className}`}>
-              <h1 className='text-xl max-sm:text-lg'>Hello 👋, My name is</h1>
-              <h1 className='text-5xl max-sm:text-4xl bg-orange-600 w-fit px-2 rounded-lg'>Abdulkareem</h1>
-              <h1 className='text-2xl max-sm:text-xl'>and I'm a</h1>
-              <h1 className='text-3xl max-sm:text-2xl bg-blue-700 w-fit px-2 rounded-lg rounded-bl-none'>Front-End Web</h1>
-              <h1 className='text-3xl max-sm:text-2l bg-blue-700 w-fit px-2 rounded-lg rounded-t-none'>Developer</h1>
+              <h1 className='text-xl text-bg max-sm:text-sm'>Hello 👋, My name is</h1>
+              <h1 className='text-5xl max-sm:text-2xl bg-orange-600 w-fit px-2 bg-opacity-70 rounded-lg'>Abdulkareem</h1>
+              <h1 className='text-2xl text-bg max-sm:text-xs'>and I'm a</h1>
+              <h1 className='text-3xl max-sm:text-lg bg-blue-700 w-fit px-2 bg-opacity-70 rounded-lg rounded-bl-none'>Front-End Web</h1>
+              <h1 className='text-3xl max-sm:text-lg bg-blue-700 w-fit px-2 bg-opacity-70 rounded-lg rounded-t-none'>Developer</h1>
               <div className='flex gap-3 mt-4 pl-2 pr-8 max-sm:gap-0'>
                 <Image className='h-5 w-6 max-sm:scale-75 ' src={HTML5} />
                 <Image className='h-5 w-6 max-sm:scale-75 ' src={CSS3} />
@@ -50,7 +50,7 @@ export default function Home() {
                 <Image className='h-5 w-14 max-sm:scale-75 ' src={Nextjs} />
               </div>
             </div>
-            <div className='w-80 absolute right-0 bottom-0 -z-10'>
+            <div className='w-72 max-sm:w-60 absolute right-0 bottom-0 -z-10'>
               <Image className='w-full' src={MyPic} />
             </div>
           </div>
@@ -66,16 +66,13 @@ export default function Home() {
             and I'm excited to bring my fun and outgoing personality to any project. Let's create something awesome together!
           </p>
           <div className='flex gap-3 sm:justify-start justify-center mt-10 text-3xl text-center'>
-            <a href="">
+            <a href="https://github.com/Abdulkareem1094">
               <AiFillGithub/>
             </a>
-            <a href="">
-              <AiFillMail/>
-            </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/abdulkareem-tukur-b1b229262">
               <AiFillLinkedin/>
             </a>
-            <a href="">
+            <a href="https://twitter.com/ak_mt__?t=imTLdVgtoV8UfZYEjd6yWg&s=09">
               <AiFillTwitterCircle/>
             </a>
           </div>
@@ -144,7 +141,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className='flex flex-col bg-bg text-gray-400 p-6 mt-32'>
+      <div className='flex flex-col bg-bg text-gray-400 mt-32'>
         <ContactForm />
         <h1 className='text-center'>MadeByAbdulkareem</h1>
       </div>
@@ -161,7 +158,7 @@ function ContactForm() {
       return <p>Email successfully sent!</p>;
   }
   return (
-    <form className=' text-sm flex gap-6 flex-col text-left w-96 text-bg bg-bg p-6' onSubmit={handleSubmit}>
+    <form className=' text-sm flex gap-6 flex-col text-left w-96 max-sm:w-60 text-bg bg-bg p-3' onSubmit={handleSubmit}>
       <h1 className='text-3xl text-white font-bold'>Get in touch</h1>
       <div className='flex flex-col' >
         <input

@@ -58,8 +58,8 @@ export default function Home() {
       </div>
 
       <div className='text-center p-6'>
-        <div className='bg-bg text-white mt-32 rounded-xl p-6 mx-auto max-w-[943px]'>
-          <h1 className='sm:text-4xl text-3xl font-bold sm:mb-10 mb-5'>About</h1>
+        <div className='bg-bg text-white mt-32 rounded-xl p-6 pt-0 mx-auto max-w-[943px]'>
+          <h1 className='sm:text-4xl text-bg text-3xl font-bold sm:mb-10 mb-5 mx-auto bg-white rounded-xl rounded-t-none w-fit py-3 px-10 '>About</h1>
           <p className='sm:text-lg text-sm'>I love making sleek and professional looking websites using my favorite frameworks like React and Tailwind CSS. 
             My passion for coding and creating visually stunning, dynamic, and engaging websites is off the charts! As a front-end dev, 
             I've got the skills to make websites look as good as they function. I'm always on top of the latest technologies and trends, 
@@ -78,9 +78,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=' text-white mt-32 rounded-xl '>
-          <h1 className='text-4xl mb-10 text-bg font-bold'>Projects</h1>
-          <div className=" flex flex-wrap gap-y-5 gap-x-2 lg:text-left">
+        <div className=' text-white mt-32 rounded-xl'>
+          <h1 className='text-4xl -mb-[2px] mx-auto text-bg rounded-t-xl border-2 border-bg border-b-white px-10 py-3 w-fit font-bold '>Projects</h1>
+          <div className=" flex flex-wrap gap-y-5 gap-x-2 border-t-2 border-bg pt-5 lg:text-left">
             <a
                 href=""
                 className="group relative w-96 h-fit overflow-hidden box-border mx-auto rounded-lg "
@@ -159,7 +159,7 @@ function ContactForm() {
   }
   return (
     <form className=' text-sm flex gap-6 flex-col text-left w-96 max-sm:w-60 text-bg bg-bg p-3' onSubmit={handleSubmit}>
-      <h1 className='text-3xl text-white font-bold'>Get in touch</h1>
+      <h1 className='text-3xl text-white font-bold -mt-16 -ml-3 bg-bg px-10 py-3 w-fit rounded-t-xl rounded-l-none max-sm:text-2xl'>Get in touch</h1>
       <div className='flex flex-col' >
         <input
           className='outline-none border-bg border-[1px] bg-gray-200 p-2 '

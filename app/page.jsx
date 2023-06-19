@@ -34,7 +34,7 @@ export default function Home() {
         </div>
         <div className='relative flex justify-center px-6'>
           <div className='absolute top-0 left-0 w-full h-full z-10'/>
-          <div className='relative bg-[#ffffff] rounded-t-xl lg:w-[650px] md:w-[560px] sm:w-fit mt-20 px-10 max-sm:px-5 z-0'>
+          <div className='relative bg-[#ffffff] rounded-t-xl lg:w-[650px] md:w-[560px] sm:w-fit mt-32 px-10 max-sm:px-5 z-0'>
             <div className={`pt-32 pb-6 ${sigmar.className}`}>
               <h1 className='text-xl text-bg max-sm:text-sm'>Hello 👋, My name is</h1>
               <h1 className='text-5xl max-sm:text-2xl bg-orange-600 w-fit px-2 bg-opacity-70 rounded-lg'>Abdulkareem</h1>
@@ -58,7 +58,7 @@ export default function Home() {
       </div>
 
       <div className='text-center p-6'>
-        <div className='bg-bg text-white mt-32 rounded-xl p-6 pt-0 mx-auto max-w-[943px]'>
+        <div className='bg-bg text-white mt-64 rounded-xl p-6 pt-0 mx-auto max-w-[943px]'>
           <h1 className='sm:text-4xl text-bg text-3xl font-bold sm:mb-10 mb-5 mx-auto bg-white rounded-xl rounded-t-none w-fit py-3 px-10 '>About</h1>
           <p className='sm:text-lg text-sm'>I love making sleek and professional looking websites using my favorite frameworks like React and Tailwind CSS. 
             My passion for coding and creating visually stunning, dynamic, and engaging websites is off the charts! As a front-end dev, 
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=' text-white mt-32 rounded-xl'>
+        <div className=' text-white mt-64 rounded-xl'>
           <h1 className='text-4xl -mb-[2px] mx-auto text-bg rounded-t-xl border-2 border-bg border-b-white px-10 py-3 w-fit font-bold '>Projects</h1>
           <div className=" flex flex-wrap gap-y-5 gap-x-2 border-t-2 border-bg pt-5 lg:text-left">
             <a
@@ -141,7 +141,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className='flex flex-col bg-bg text-gray-400 mt-32'>
+      <div className='flex flex-col bg-bg text-gray-400 mt-64'>
         <ContactForm />
         <h1 className='text-center'>MadeByAbdulkareem</h1>
       </div>

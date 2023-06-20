@@ -87,7 +87,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-              <Image className='' src={Web1} width='100%' height='100%' />
+              <Image className='group-hover:scale-150 duration-300 transition-all' src={Web1} width='100%' height='100%' />
               <div className='absolute px-5 h-full top-[286px] bg-bg transition-all duration-300 group-hover:top-10 group-hover:py-4 '>
                 <h1 className='text-lg mb-2'>Lorem ipsum</h1>
                 <p className='text-sm '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
@@ -101,7 +101,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-              <Image className='' src={Web1} width='100%' height='100%' />
+              <Image className='group-hover:scale-150 duration-300 transition-all' src={Web1} width='100%' height='100%' />
               <div className='absolute px-5 h-full top-[286px] bg-bg transition-all duration-300 group-hover:top-10 group-hover:py-4 '>
                 <h1 className='text-lg mb-2'>Lorem ipsum</h1>
                 <p className='text-sm '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
@@ -115,7 +115,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-              <Image className='' src={Web1} width='100%' height='100%' />
+              <Image className='group-hover:scale-150 duration-300 transition-all' src={Web1} width='100%' height='100%' />
               <div className='absolute px-5 h-full top-[286px] bg-bg transition-all duration-300 group-hover:top-10 group-hover:py-4 '>
                 <h1 className='text-lg mb-2'>Lorem ipsum</h1>
                 <p className='text-sm '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 
@@ -129,7 +129,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-              <Image className='' src={Web1} width='100%' height='100%' />
+              <Image className='group-hover:scale-150 duration-300 transition-all' src={Web1} width='100%' height='100%' />
               <div className='absolute px-5 h-full top-[286px] bg-bg transition-all duration-300 group-hover:top-10 group-hover:py-4 '>
                 <h1 className='text-lg mb-2'>Lorem ipsum</h1>
                 <p className='text-sm '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veritatis consequatur, 

@@ -79,8 +79,12 @@ export default function Home() {
         </div>
 
         <div className=' text-white mt-64 rounded-xl'>
-          <h1 className='text-4xl -mb-[2px] mx-auto text-bg rounded-t-xl border-2 border-bg border-b-white px-10 py-3 w-fit font-bold '>Projects</h1>
-          <div className=" flex flex-wrap gap-y-5 gap-x-2 border-t-2 border-bg pt-5 lg:text-left">
+          <div className='flex'>
+            <div className='w-full border-b-2 border-bg' />
+            <h1 className='text-4xl text-bg rounded-t-xl border-2 border-bg border-b-white px-10 py-3 w-fit font-bold '>Projects</h1>
+            <div className='w-full border-b-2 border-bg' />
+          </div>
+          <div className=" flex flex-wrap gap-y-5 gap-x-2 pt-5 lg:text-left">
             <a
                 href=""
                 className="group relative w-96 h-fit overflow-hidden box-border mx-auto rounded-lg "
